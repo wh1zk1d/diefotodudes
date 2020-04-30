@@ -1,7 +1,6 @@
 import React from "react"
 import SEO from "./seo"
 import { Helmet } from "react-helmet"
-import "normalize.css"
 import GlobalStyles from "./styles/GlobalStyles"
 
 import ContentLayout from "./styles/ContentLayout"
@@ -16,8 +15,7 @@ const Layout = ({ children, title }) => {
         <link rel="stylesheet" href="https://use.typekit.net/fxg4jde.css" />
       </Helmet>
       <Header />
-
-      <ContentLayout>{children}</ContentLayout>
+      {/* <ContentLayout>{children}</ContentLayout> */}
     </>
   )
 }

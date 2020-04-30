@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
+
+import logo from "../images/logo.png"
 
 const NavStyles = styled.nav`
   display: flex;
@@ -15,26 +16,40 @@ const NavUl = styled.ul`
 `
 
 const NavLi = styled.li`
+  cursor: pointer;
   font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 2px;
   list-style-type: none;
   text-transform: uppercase;
+  transition: color 0.2s ease;
 
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &:hover {
+    color: var(--color-primary);
   }
 `
 
 const Nav = () => (
   <NavStyles>
-    <h2>🤓</h2>
+    <img src={logo} alt="diefotodudes Logo" height="42" />
     <NavUl>
-      <NavLi>Home</NavLi>
+      <NavLi>Die Dudes</NavLi>
       <NavLi>Foto</NavLi>
       <NavLi>Video</NavLi>
       <NavLi>Projekte</NavLi>
       <NavLi>Kontakt</NavLi>
     </NavUl>
+    <a
+      href="https://instagram.com/diefotodudes"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
   </NavStyles>
 )
 

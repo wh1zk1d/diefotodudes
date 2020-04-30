@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const ContentStyles = styled.div`
+  padding: 0 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 1440px;
-  width: 80%;
 `
 
 const ContentLayout = ({ children }) => (
