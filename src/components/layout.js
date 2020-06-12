@@ -15,7 +15,7 @@ const Layout = ({ children, title }) => {
         <link rel="stylesheet" href="https://use.typekit.net/fxg4jde.css" />
       </Helmet>
       <Header />
-      {/* <ContentLayout>{children}</ContentLayout> */}
+      <ContentLayout>{children}</ContentLayout>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import logo from "../images/logo.png"
+import { FaInstagram } from "react-icons/fa"
 
 const NavStyles = styled.nav`
   display: flex;
@@ -40,15 +41,16 @@ const Nav = () => (
       <NavLi>Die Dudes</NavLi>
       <NavLi>Foto</NavLi>
       <NavLi>Video</NavLi>
-      <NavLi>Projekte</NavLi>
+      <NavLi>Galerie</NavLi>
       <NavLi>Kontakt</NavLi>
     </NavUl>
     <a
       href="https://instagram.com/diefotodudes"
       target="_blank"
       rel="noopener noreferrer"
+      title="Zu Instagram"
     >
-      Instagram
+      <FaInstagram />
     </a>
   </NavStyles>
 )

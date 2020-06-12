@@ -1,6 +1,17 @@
 import { createGlobalStyle } from "styled-components"
 
+import fontWoff from "../../fonts/made_soulmaze_italic-webfont.woff"
+import fontWoff2 from "../../fonts/made_soulmaze_italic-webfont.woff2"
+
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'made_soulmazeitalic';
+    src: url(${fontWoff2}) format('woff2'),
+         url(${fontWoff}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   :root {
     --color-bg: #101a24;
     --color-text: #fff;
@@ -8,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     --color-pink: #F4CEDF;
 
     --font: futura-pt, sans-serif;
+    --font-headline: 'made_soulmazeitalic';
   }
 
   * {
